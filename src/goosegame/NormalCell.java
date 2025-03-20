@@ -65,5 +65,13 @@ public class NormalCell implements Cell{
         return "NormalCell";
     }
 
+    /**
+     * Get the number of round to wait for 
+     * @return the string about how much round to wait for
+     */
+    public String getWaitingTime(){
+        return "";
+    }
+
 }
       
