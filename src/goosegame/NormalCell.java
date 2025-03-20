@@ -57,5 +57,13 @@ public class NormalCell implements Cell{
         return this.index;
     }
 
+    /**
+     * Get the type of the cell
+     * @return the type of this cell
+     */
+    public String getType(){
+        return "NormalCell";
+    }
+
 }
       
