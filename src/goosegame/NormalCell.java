@@ -73,5 +73,12 @@ public class NormalCell implements Cell{
         return "";
     }
 
+    /**
+     * Remove player at a specific cell
+     */
+    public Player removePlayerAtCell(){
+        return this.player = null;
+    }
+
 }
       
