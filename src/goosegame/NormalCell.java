@@ -16,3 +16,12 @@ public class NormalCell implements Cell{
     this.player = null;
   }
 
+  /**
+    * Know if the cell is occupied
+    * @return true if the cell is occupied, false otherwize
+    */
+    public boolean isOccupied(){
+        return this.player != null;
+      }
+    }
+      
