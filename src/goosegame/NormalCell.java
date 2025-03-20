@@ -32,5 +32,13 @@ public class NormalCell implements Cell{
         return true;
     }
 
+    /**
+     * Put a player into a cell
+     * @param the player we want to put into the cell
+     */
+    public void welcomePlayer(Player p){
+        this.player = p;
+    }
+
 }
       
