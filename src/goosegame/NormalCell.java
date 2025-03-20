@@ -49,5 +49,13 @@ public class NormalCell implements Cell{
         return this.index;
     }
 
+    /**
+     * Get the player of the cell if he exists
+     * @return the index of the cell
+     */
+    public int getIndex(){
+        return this.index;
+    }
+
 }
       
