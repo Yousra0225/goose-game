@@ -42,6 +42,16 @@ public class StartCell implements Cell {
     this.player = p;
   }
 
+  /**
+    * Get the index of the final cell
+    * @param dt the value of the roll of the dice
+    * @return the index of the final cell
+    */
+  public int getFinalCell(int dt){
+      return dt;
+  }
+    
+
     
 
 }
