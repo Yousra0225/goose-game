@@ -50,6 +50,14 @@ public class StartCell implements Cell {
   public int getFinalCell(int dt){
       return dt;
   }
+
+  /** 
+   * Get the player of the cell if he exists
+   * @return the player of the cell
+   */
+  public Player getPlayer(){
+      return this.player;
+  }
     
 
     
