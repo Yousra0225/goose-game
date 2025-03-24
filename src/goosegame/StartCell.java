@@ -1,5 +1,7 @@
 package goosegame;
 
+package goosegame;
+
 /**
   * Class for StartCell
   */
@@ -28,9 +30,18 @@ public class StartCell implements Cell {
     * Know if player can be left the cell
     * @return true if player can play, false otherwize
     */
-    public boolean canBeLeft(){
-        return true;
-      }
+  public boolean canBeLeft(){
+    return true;
+  }
+
+  /**
+    * Put a player in a cell
+    * @param the player we want to put into the cell
+    */
+  public void welcomePlayer(Player p){
+    this.player = p;
+  }
+
     
 
 }
