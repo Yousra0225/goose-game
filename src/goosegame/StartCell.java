@@ -24,4 +24,13 @@ public class StartCell implements Cell {
     return this.player != null;
   }
 
+  /**
+    * Know if player can be left the cell
+    * @return true if player can play, false otherwize
+    */
+    public boolean canBeLeft(){
+        return true;
+      }
+    
+
 }
