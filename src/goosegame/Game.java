@@ -15,6 +15,6 @@ public class Game {
         this.board = b;
         this.thePlayers = new ArrayList<>();
         this.it = thePlayers.iterator();
-    }
+    }   
 
 }

@@ -17,3 +17,10 @@ public abstract class Board {
     this.theCells[0] = new StartCell();
     this.initBoard();
   }
+
+  /**
+  * initialization of the table and its special cells
+  */
+  abstract protected void initBoard();
+
+}
