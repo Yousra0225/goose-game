@@ -14,5 +14,14 @@ public class StartCell implements Cell {
   public StartCell() {
     this.index = 0;
     this.player = null;
-  } 
+  }
+
+  /**
+    * Know if the cell is occupied
+    * @return true if the cell is occupied, false otherwize
+    */
+  public boolean isOccupied(){
+    return this.player != null;
+  }
+
 }
