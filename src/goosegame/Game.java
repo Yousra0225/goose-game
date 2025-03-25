@@ -54,5 +54,18 @@ public class Game {
         return this.it.next();
     }
   
-
+    /**
+     * Check if the index is valid, if is upper than nbOfCells, you go to last cell and then you walk back the rest
+    * @param i the index to check
+    * @return the valid index
+    */
+    public int caseValid(int i) {
+        int res = i;
+        int nbDeCases = this.board.getNbOfCells();
+        if( i > nbDeCases ){
+            int walkBack = i - nbDeCases ;
+            res = nbDeCases - walkBack;
+        }
+        return res;
+    }
 }
