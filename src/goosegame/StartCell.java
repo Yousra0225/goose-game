@@ -58,8 +58,63 @@ public class StartCell implements Cell {
   public Player getPlayer(){
       return this.player;
   }
+
+    /**
+    * Get the index of the cell
+    * @return the index of the cell
+    */
+  public int getIndex(){
+    return this.index;
+  }
+
+  /**
+    * Get the type of this cell
+    * @return the type of this cell
+    */
+  public String getType(){
+    return "StartCell";
+  }
+
+  /**
+    * Get the nb of round to wait for
+    * @return the string about how much round to wait for
+    */
+  public String getWaitingTime(){
+    return "";
+  }
+
+  public Player removePlayerAtCell(){
+    return this.player = null;
+  }
+
+  /**
+    * Get the index of the cell
+    * @return the index of the cell
+    */
+  public int getIndex(){
+    return this.index;
+  }
+  
+  /**
+    * Get the type of this cell
+    * @return the type of this cell
+    */
+  public String getType(){
+    return "StartCell";
+  }
+  
+  /**
+    * Get the nb of round to wait for
+    * @return the string about how much round to wait for
+    */
+  public String getWaitingTime(){
+    return "";
+  }
+  
+  public Player removePlayerAtCell(){
+    return this.player = null;
+  }
     
 
-    
 
 }
