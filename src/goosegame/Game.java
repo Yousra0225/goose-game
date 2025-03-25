@@ -103,4 +103,23 @@ public void movePlayer(Player joueur, int valeur ){
     caseFinale.welcomePlayer(joueur);
     joueur.changeCell(caseFinale);
 }
+
+/**
+ * PLAY A GAME
+ */
+public void play() {
+    this.it = thePlayers.iterator();
+    while(!this.isFinished()) {
+        Player player = this.nextPlayer();
+        if( player.getCell().canBeLeft() ){
+        int lanceDe = player.twoDiceThrow();
+        this.movePlayer(player,lanceDe);
+        }
+        else
+        System.out.println(player.toString() + " is in cell "+ player.getCell().getIndex() +", "+player.toString() + " cannot play waiting for ("+ player.getCell().getWaitingTime() +")");
+    }
+    Player p = this.board.getCell(63).getPlayer();
+    System.out.println(p.toString()+" has won !!!");
+}
+
 }
