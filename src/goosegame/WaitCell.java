@@ -30,4 +30,21 @@ public class WaitCell extends NormalCell {
         }
         return this.timeRemaining == 0;
       }
+    /**
+    * Put a player in a cell
+    * @param the player we want to put into the cell
+    */
+    public void welcomePlayer(Player p) {
+        super.welcomePlayer(p);
+        this.timeRemaining = this.timeToWait;
+      }
+    
+    /**
+    * Get the nb of round to wait for
+    * @return the string about how much round to wait for
+    */
+    public String getWaitingTime(){
+        return this.timeRemaining+1 + "turns";
+    }
+    
 }
